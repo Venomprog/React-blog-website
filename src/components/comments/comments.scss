@@ -1,0 +1,102 @@
+.comments{
+  margin-top: 100px;
+
+  &-list{
+
+    &__title{
+
+    }
+
+    &__content{
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    &__comment{
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: 2px solid lightblue;
+
+      &-name{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 110%;
+      }
+
+      &-text{
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 110%;
+        font-weight: 500;
+      }
+    }
+  }
+
+
+  &-add{
+    &__title{
+      margin-top: 100px;
+    }
+
+    &__row{
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
+
+    &__input{
+      padding: 20px;
+      width: 100%;
+
+      border-radius: 20px;
+      background: lightcyan;
+      border: 2px solid lightblue;
+
+      font-size: 20px;
+      line-height: 110%;
+      outline: none;
+      transition: 0.7s cubic-bezier(0.33, 1, 0.68, 1);
+      resize: none;
+
+      &:active{
+        border-color: lightsalmon;
+      }
+      &:focus{
+        border-color: lightsalmon;
+      }
+
+      @media (min-width: 1024px) {
+        &:hover{
+          border-color: lightsalmon;
+        }
+      }
+
+      &.long-text{
+        height: 200px;
+      }
+    }
+
+    &__btn{
+      margin-top: 30px;
+      border: 2px solid lightblue;
+      border-radius: 20px;
+      padding: 10px 20px;
+      transition: 0.7s cubic-bezier(0.33, 1, 0.68, 1);
+
+      font-size: 22px;
+      line-height: 110%;
+      cursor: pointer;
+      background: white;
+
+      @media (min-width: 1024px) {
+        &:hover{
+          background: lightblue;
+          color: white;
+        }
+      }
+    }
+  }
+}

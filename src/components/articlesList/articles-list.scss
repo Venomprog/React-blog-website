@@ -1,0 +1,129 @@
+@import '../..//variables.scss';
+
+.articles-list{
+  margin-top: 60px;
+
+
+  &__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__search{
+    padding: 20px;
+    width: 500px;
+
+    border-radius: 20px;
+    background: lightcyan;
+    border: 2px solid lightblue;
+
+    font-size: 20px;
+    line-height: 110%;
+    outline: none;
+    transition: 0.7s cubic-bezier(0.33, 1, 0.68, 1);
+    resize: none;
+
+    &:active{
+      border-color: lightsalmon;
+    }
+    &:focus{
+      border-color: lightsalmon;
+    }
+
+    @media (min-width: 1024px) {
+      &:hover{
+        border-color: lightsalmon;
+      }
+    }
+  }
+
+  &__title{
+    font-size: 42px;
+    line-height: 110%;
+    font-weight: 700;
+  }
+
+  &__items{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+
+    width: 100%;
+
+    border-radius: 20px;
+    border: 3px solid lightblue;
+    transition: $transition;
+    color: #DF6C4F;
+    background: lightblue;
+    color: black;
+
+    &:hover{
+      background: blueviolet;
+      border-color: blueviolet;
+      color: white;
+    }
+
+    &-bot{
+      margin-top: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-title{
+      font-size: 24px;
+      line-height: 110%;
+      font-weight: 700;
+      transition: $transition;
+    }
+
+    &-description{
+      margin-top: 16px;
+      font-size: 16px;
+      line-height: 110%;
+      font-weight: 500;
+      transition: $transition;
+
+    }
+
+    &-link{
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 24px;
+      border-radius: 20px;
+      background: lightcoral;
+      color: white;
+      font-size: 20px;
+      line-height: 110%;
+      font-weight: 700;
+      text-decoration: none;
+      transition: $transition;
+
+      @media (min-width: 1024px) {
+        &:hover{
+          background: orange;
+          scale: 1.04;
+        }
+      }
+    }
+
+    &-date{
+      font-size: 18px;
+      line-height: 110%;
+      font-weight: 500;
+      transition: $transition;
+    }
+  }
+}
