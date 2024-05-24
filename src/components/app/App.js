@@ -18,7 +18,7 @@ function App() {
   const dispatch = useDispatch();
 
   if (firstLoad){
-    dispatch(fetchArticles())
+    // dispatch(fetchArticles())
     setFirstLoad(false)
   }
 
