@@ -1,8 +1,7 @@
 import ArticlesListItem from './articlesListItem/articlesListItem'
 import '../articlesList/articles-list.scss'
-import { useEffect, useState} from 'react'
+import {useState} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchArticles } from './articlesSlice'
 
 const ArticlesList = () => {
 

@@ -1,6 +1,4 @@
-import { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { fetchArticles } from '../articlesList/articlesSlice'
+import { useSelector } from 'react-redux'
 
 
 const StatisticList = () => {
